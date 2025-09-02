@@ -172,6 +172,7 @@ header {
 }
 .facts-info{
     max-width: 540px;
+    
 }
 /* sponsor section starts here */
 
@@ -185,6 +186,44 @@ header {
     grid-template-columns: repeat(5, 1fr);
     gap: 124px;
 }
+/* features section  */
+.features{
+    gap: 140px;
+}
+.features .section-title{
+    padding-left: 21px;
+    border-left: 5px solid rgba(255, 144, 14, 1);
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+ .feature-card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+ .feature-card-description{
+    margin-top: 10px;
+ }
+ #exp-badge{
+    padding: 40px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -77px;
+ }
+ #exp-year{
+    font-size: 4rem;
+    font-weight: 700;
+ }
+ .footer{
+    background-color: rgba(255, 244, 231, 1);
+    padding: 40px 0px;
+    border-radius: 8px;
+    margin: 0px;
+ }
 /* responsive media query------------------------ */
 
 @media screen and (max-width:576px) {
@@ -232,7 +271,20 @@ header {
     .card {
         margin: 0 auto;
     }
+    .features{
+        flex-direction: column;
+    }
+    .features-info{
+        padding: 20px;
+    }
+    .architect-image img{
+        width: 100%;
 
+    }
+    #exp-badge{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -242,7 +294,8 @@ header {
     .nav-links{
         gap: 20px;
     }
-    .teams {
+    .teams,
+    .features{
         flex-direction: column;
     }
 
@@ -259,6 +312,9 @@ header {
     .card {
         margin: 0 auto;
     }
+     .facts-info{
+        margin: 0px auto;
+     }
     .facts .section-title,
     .facts .section-description {
         text-align: center;
@@ -268,6 +324,18 @@ header {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         gap: 30px;
+    }
+    .architect-image img{
+        width: 100%;
+
+    }
+    #exp-badge{
+        /* margin-top: 20px;
+        margin-left: 30px; */
+        margin: 20px 300px
+    }
+    .features-info{
+        padding: 20px;
     }
     
 }
